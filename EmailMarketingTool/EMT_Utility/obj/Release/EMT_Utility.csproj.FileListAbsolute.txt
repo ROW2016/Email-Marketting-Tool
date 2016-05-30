@@ -1,0 +1,20 @@
+F:\ROW\Email Markeing\Shared\Final Package\EmailMarketingTool\EMT_Utility\bin\Release\EMT_Utility.dll.config
+F:\ROW\Email Markeing\Shared\Final Package\EmailMarketingTool\EMT_Utility\bin\Release\EMT_Utility.dll
+F:\ROW\Email Markeing\Shared\Final Package\EmailMarketingTool\EMT_Utility\bin\Release\EMT_Utility.pdb
+F:\ROW\Email Markeing\Shared\Final Package\EmailMarketingTool\EMT_Utility\obj\Release\EMT_Utility.dll
+F:\ROW\Email Markeing\Shared\Final Package\EmailMarketingTool\EMT_Utility\obj\Release\EMT_Utility.pdb
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_Utility\obj\Release\EMT_Utility.csprojResolveAssemblyReference.cache
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_Utility\obj\Release\EMT_Utility.dll
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_Utility\obj\Release\EMT_Utility.pdb
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_Utility\bin\Release\EMT_Utility.dll.config
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_Utility\bin\Release\EMT_Utility.dll
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_Utility\bin\Release\EMT_Utility.pdb
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_Utility\bin\Release\EMT_DataAccessLayer.dll
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_Utility\bin\Release\EMT_EmailHelper.dll
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_Utility\bin\Release\EMT_Exception.dll
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_Utility\bin\Release\EMT_EmailSender.dll
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_Utility\bin\Release\SendGridMail.dll
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_Utility\bin\Release\EMT_DataAccessLayer.pdb
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_Utility\bin\Release\EMT_EmailHelper.pdb
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_Utility\bin\Release\EMT_Exception.pdb
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_Utility\bin\Release\EMT_EmailSender.pdb

@@ -1,0 +1,6 @@
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_DataAccessLayer\bin\Release\EMT_DataAccessLayer.dll.config
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_DataAccessLayer\bin\Release\EMT_DataAccessLayer.dll
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_DataAccessLayer\bin\Release\EMT_DataAccessLayer.pdb
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_DataAccessLayer\obj\Release\EMT_DataAccessLayer.dll
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_DataAccessLayer\obj\Release\EMT_DataAccessLayer.pdb
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_DataAccessLayer\obj\Release\EMT_DataAccessLayer.csprojResolveAssemblyReference.cache

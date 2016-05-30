@@ -1,0 +1,145 @@
+﻿@model EMT_WebApp.ViewModels.UpdateCampModel
+@{
+    //ViewBag.designer = Model.EmailContent;
+    ViewBag.Title = "Creation";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div id="page-wrapper">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">Update settings for @Html.LabelFor(m => m.Campaigns.Name)  Campaign</h1>
+        </div>
+        <!-- /.col-lg-12 -->
+    </div>
+    <!-- /.row -->
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="panel panel-default">
+                <div class="panel-heading"> Kindly provide the following details  </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-lg-6">
+
+                            @using (Html.BeginForm("editCampaign", "Campaign", FormMethod.Post))
+                            {
+                                @Html.HiddenFor(model => model.Campaigns.Cid)
+                                <div class="form-group">
+                                    <label for="sel1">Select a type of campaign to send:</label>
+                                    @Html.DropDownListFor(model => model.Campaigns.Cid, (SelectList)ViewBag.campTypes, new { @class = "form-control" })
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <label for="sel1">Select a list</label>
+                                        @Html.DropDownListFor(model => model.Campaigns.ListId, (SelectList)ViewBag.List, new { @class = "form-control" })
+                                        <span class="input-group-btn">
+                                            <button type="button" class="btn btn-secondary" style="margin-top: 25px;" data-toggle="modal" data-target=".bd-example-modal-lg">View List</button>
+                                        </span>
+                                        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-lg">
+                                                <div class="modal-content">
+                                                    <div class="row">
+                                                        <div class="col-lg-12">
+                                                            <div class="panel panel-default">
+                                                                <div class="panel-heading">
+                                                                    Subscribers to list
+                                                                </div>
+                                                                <!-- /.panel-heading -->
+                                                                <div class="panel-body">
+                                                                    <div class="dataTable_wrapper">
+                                                                        <table class="table table-striped table-bordered table-hover" id="dataTables-example">
+                                                                            <thead>
+                                                                                <tr>
+                                                                                    <th>First Name</th>
+                                                                                    <th>Last name</th>
+                                                                                    <th>Email Address</th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                @if (Model != null)
+                                                                                {
+                                                                                    if (Model.Subscribers != null)
+                                                                                    {
+                                                                                        foreach (var item in Model.Subscribers)
+                                                                                        {
+                                                                                            if (item.Unsubscribe == false)
+                                                                                            {
+                                                                                            <tr class="odd gradeX">
+                                                                                                <td>
+                                                                                                    @Html.DisplayFor(model => item.FirstName)
+                                                                                                </td>
+                                                                                                <td>
+                                                                                                    @Html.DisplayFor(model => item.LastName)
+                                                                                                </td>
+                                                                                                <td>
+                                                                                                    @Html.DisplayFor(model => item.EmailAddress)
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                            }
+                                                                                        }
+
+                                                                                    }
+                                                                                }
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                    </div>
+                                                                    <!-- /.table-responsive -->
+                                                                </div>
+                                                                <!-- /.panel-body -->
+                                                            </div>
+                                                            <!-- /.panel -->
+                                                        </div>
+                                                        <!-- /.col-lg-12 -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                <div class="form-group">
+                                    <label>Name your campaign</label>
+                                    @*@Html.EditorFor*@
+                                    @Html.TextBoxFor(m => m.Campaigns.Name, new { @class = "form-control", required = "required", placeholder = "Campaign Name" })
+                                    <p class="help-block">Change your campaign name </p>
+                                </div>
+                                <div class="form-group">
+                                    <label>Email subject </label>
+                                    @Html.TextBoxFor(m => m.Campaigns.EmailSubject, new { @class = "form-control", required = "required", placeholder = "Subject" })
+                                    <p class="help-block">How do I write a good subject line? </p>
+                                </div>
+                                <div class="form-group">
+                                    <label>From name </label>
+                                    @Html.TextBoxFor(m => m.Campaigns.FromName, new { @class = "form-control", required = "required", placeholder = "From Name" })
+                                    <p class="help-block"> Use something subscribers will instantly recognize, like your company name. </p>
+                                </div>
+                                <div class="form-group">
+                                    <label>From email address </label>
+                                    @Html.TextBoxFor(m => m.Campaigns.FromEmail, new { @class = "form-control", required = "required", placeholder = "Email id" })
+                                </div>
+                                @*@Html.HiddenFor(model => model.Campaigns.ListId)
+                                {
+                                    Model.Campaigns.EmailContent = WebUtility.HtmlDecode(Model.Campaigns.EmailContent);
+                                }
+                                @Html.HiddenFor(model => model.Campaigns.EmailContent)*@
+                                @Html.HiddenFor(model => model.Campaigns.CTypeId)
+                                <button type="submit" class="btn btn-primary">Save</button>
+                                @*<a href="new_template.html"><button type="button" class="btn btn-default">Next</button></a>*@
+                            }
+
+                        </div>
+                        <!-- /.col-lg-6 (nested) -->
+                    </div>
+                    <!-- /.row (nested) -->
+                </div>
+                <!-- /.panel-body -->
+            </div>
+            <!-- /.panel -->
+        </div>
+        <!-- /.col-lg-12 -->
+    </div>
+    <!-- /.row -->
+
+</div>
+<!-- /#page-wrapper -->

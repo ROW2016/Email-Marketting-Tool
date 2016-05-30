@@ -1,0 +1,5 @@
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_DataAccessLayer\bin\Debug\EMT_DataAccessLayer.dll.config
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_DataAccessLayer\bin\Debug\EMT_DataAccessLayer.dll
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_DataAccessLayer\bin\Debug\EMT_DataAccessLayer.pdb
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_DataAccessLayer\obj\Debug\EMT_DataAccessLayer.dll
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_DataAccessLayer\obj\Debug\EMT_DataAccessLayer.pdb

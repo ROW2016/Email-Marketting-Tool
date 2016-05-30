@@ -1,0 +1,13 @@
+﻿Installing assembly 'F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_CampaignService\bin\Debug\EMT_CampaignService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_CampaignService\bin\Debug\EMT_CampaignService.InstallLog
+   assemblypath = F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_CampaignService\bin\Debug\EMT_CampaignService.exe
+Installing service CampaignChecker...
+Service CampaignChecker has been successfully installed.
+Creating EventLog source CampaignChecker in log Application...
+Committing assembly 'F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_CampaignService\bin\Debug\EMT_CampaignService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_CampaignService\bin\Debug\EMT_CampaignService.InstallLog
+   assemblypath = F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_CampaignService\bin\Debug\EMT_CampaignService.exe

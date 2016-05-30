@@ -1,0 +1,15 @@
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_Tracking\obj\Release\EMT_Tracking.csprojResolveAssemblyReference.cache
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_Tracking\bin\Release\EMT_Tracking.dll.config
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_Tracking\bin\Release\EMT_Tracking.dll
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_Tracking\bin\Release\EMT_Tracking.pdb
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_Tracking\bin\Release\EMT_Exception.dll
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_Tracking\bin\Release\Microsoft.Owin.dll
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_Tracking\bin\Release\Owin.dll
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_Tracking\bin\Release\System.Web.Http.Common.dll
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_Tracking\bin\Release\EMT_DataAccessLayer.dll
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_Tracking\bin\Release\EMT_Exception.pdb
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_Tracking\bin\Release\Microsoft.Owin.xml
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_Tracking\bin\Release\System.Web.Http.Common.xml
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_Tracking\bin\Release\EMT_DataAccessLayer.pdb
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_Tracking\obj\Release\EMT_Tracking.dll
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_Tracking\obj\Release\EMT_Tracking.pdb

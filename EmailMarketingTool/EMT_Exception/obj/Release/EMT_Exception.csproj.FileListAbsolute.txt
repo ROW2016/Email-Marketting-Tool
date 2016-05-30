@@ -1,0 +1,8 @@
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_Exception\bin\Release\EMT_Exception.dll.config
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_Exception\bin\Release\EMT_Exception.dll
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_Exception\bin\Release\EMT_Exception.pdb
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_Exception\bin\Release\EMT_DataAccessLayer.dll
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_Exception\bin\Release\EMT_DataAccessLayer.pdb
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_Exception\obj\Release\EMT_Exception.dll
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_Exception\obj\Release\EMT_Exception.pdb
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_Exception\obj\Release\EMT_Exception.csprojResolveAssemblyReference.cache

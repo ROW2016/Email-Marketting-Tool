@@ -1,0 +1,33 @@
+﻿<link rel="stylesheet" href="css/reset.css">
+<link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900|RobotoDraft:400,100,300,500,700,900'>
+<link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+<link href="~/Content/dist/css/LoginStyle.css" rel="stylesheet" />
+@model EMT_WebApp.Models.M_Subscriber
+@*<link href="~/Content/bootstrap.min.css" rel="stylesheet" />*@
+<div class="module form-module">
+    <div class="toggle">
+        @*<i class="fa fa-times"></i>*@
+        @*<div class="tooltip"></div>*@
+    </div>
+    <div class="form">
+        @using (Html.BeginForm("Unsubscribe", "List", FormMethod.Post))
+        {
+        <h2>Unsubscribe</h2>
+        <p>You will not receive any emails from this vendor</p>
+        <div>
+            @if (Model != null)
+            {
+            <input type="text"style="width:200px" placeholder="@Model.EmailAddress"/>
+            }
+        </div>
+        <div>
+            <button type="submit">Unsubscribe</button><br />
+            <br />
+            @*@Html.ActionLink("Unsubscribe", "Unsubscribe","List",null)*@
+        </div>
+        <div>
+            <button type="button" class="btn btn-default" value="Cancel">Cancel</button>
+        </div>
+        }
+    </div>
+    </div>

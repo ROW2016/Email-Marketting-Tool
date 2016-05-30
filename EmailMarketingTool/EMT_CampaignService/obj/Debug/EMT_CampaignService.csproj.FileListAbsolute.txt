@@ -1,0 +1,33 @@
+F:\Anupama\Final Package\Email Marketing Tool\EmailMarketingTool\EMT_CampaignService\bin\Debug\EMT_CampaignService.exe.config
+F:\Anupama\Final Package\Email Marketing Tool\EmailMarketingTool\EMT_CampaignService\bin\Debug\EMT_CampaignService.exe
+F:\Anupama\Final Package\Email Marketing Tool\EmailMarketingTool\EMT_CampaignService\bin\Debug\EMT_CampaignService.pdb
+F:\Anupama\Final Package\Email Marketing Tool\EmailMarketingTool\EMT_CampaignService\obj\Debug\EMT_CampaignService.csprojResolveAssemblyReference.cache
+F:\Anupama\Final Package\Email Marketing Tool\EmailMarketingTool\EMT_CampaignService\obj\Debug\EMT_CampaignService.exe
+F:\Anupama\Final Package\Email Marketing Tool\EmailMarketingTool\EMT_CampaignService\obj\Debug\EMT_CampaignService.pdb
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_CampaignService\bin\Debug\EMT_CampaignService.exe.config
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_CampaignService\bin\Debug\EMT_CampaignService.exe
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_CampaignService\bin\Debug\EMT_CampaignService.pdb
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_CampaignService\bin\Debug\EMT_Utility.dll
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_CampaignService\bin\Debug\EMT_Utility.pdb
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_CampaignService\obj\Debug\EMT_CampaignService.csprojResolveAssemblyReference.cache
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_CampaignService\obj\Debug\EMT_CampaignService.exe
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_CampaignService\obj\Debug\EMT_CampaignService.pdb
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_CampaignService\bin\Debug\EMT_EmailHelper.dll
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_CampaignService\bin\Debug\EMT_EmailSender.dll
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_CampaignService\bin\Debug\EMT_Exception.dll
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_CampaignService\bin\Debug\TRK.dll
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_CampaignService\bin\Debug\EMT_DataAccessLayer.dll
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_CampaignService\bin\Debug\SendGridMail.dll
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_CampaignService\bin\Debug\EMT_EmailHelper.pdb
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_CampaignService\bin\Debug\EMT_EmailSender.pdb
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_CampaignService\bin\Debug\EMT_Exception.pdb
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_CampaignService\bin\Debug\TRK.pdb
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_CampaignService\bin\Debug\EMT_DataAccessLayer.pdb
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_CampaignService\obj\Debug\EMT_CampaignService.ProjectInstaller.resources
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_CampaignService\obj\Debug\EMT_CampaignService.csproj.GenerateResource.Cache
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_CampaignService\bin\Debug\Newtonsoft.Json.dll
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_CampaignService\bin\Debug\SendGrid.dll
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_CampaignService\bin\Debug\SendGrid.SmtpApi.dll
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_CampaignService\bin\Debug\System.Net.Http.Formatting.dll
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_CampaignService\bin\Debug\Newtonsoft.Json.xml
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_CampaignService\bin\Debug\System.Net.Http.Formatting.xml

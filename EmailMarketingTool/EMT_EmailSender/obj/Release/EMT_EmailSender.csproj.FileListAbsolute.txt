@@ -1,0 +1,12 @@
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_EmailSender\obj\Release\EMT_EmailSender.csprojResolveAssemblyReference.cache
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_EmailSender\bin\Release\EMT_EmailSender.dll.config
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_EmailSender\bin\Release\EMT_EmailSender.dll
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_EmailSender\bin\Release\EMT_EmailSender.pdb
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_EmailSender\bin\Release\EMT_Exception.dll
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_EmailSender\bin\Release\SendGrid.dll
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_EmailSender\bin\Release\SendGridMail.dll
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_EmailSender\bin\Release\EMT_DataAccessLayer.dll
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_EmailSender\bin\Release\EMT_Exception.pdb
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_EmailSender\bin\Release\EMT_DataAccessLayer.pdb
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_EmailSender\obj\Release\EMT_EmailSender.dll
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_EmailSender\obj\Release\EMT_EmailSender.pdb

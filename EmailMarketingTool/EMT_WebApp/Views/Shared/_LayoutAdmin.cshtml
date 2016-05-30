@@ -1,0 +1,106 @@
+﻿
+@{
+    ViewBag.Title = "_LayoutAdmin";
+}
+
+
+<html>
+<head>
+    <title>Template</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    
+    <link href="~/Content/Admin/style.css" rel="stylesheet" />
+
+    @*<script src="~/Content/js/cufon-yui.js"></script>
+    <script src="~/Content/js/arial.js"></script>
+    <script src="~/Content/js/cuf_run.js"></script>*@
+    <!-- CuFon ends -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Marketing</title>
+    <script src="~/Content/bower_components/jquery/dist/jquery.min.js"></script>
+
+
+    <!-- Morris Charts JavaScript -->
+  
+    <!-- Custom Theme JavaScript -->
+    <script src="~/Content/dist/js/sb-admin-2.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="~/Content/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="~/Content/bower_components/metisMenu/dist/metisMenu.min.js"></script>
+    <!-- Bootstrap Core CSS -->
+    <link href="~/Content/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- MetisMenu CSS -->
+    <link href="~/Content/bower_components/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
+    <!-- Timeline CSS -->
+    <link href="~/Content/dist/css/timeline.css" rel="stylesheet">
+    <link href="~/Content/dist/css/style.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="~/Content/dist/css/sb-admin-2.css" rel="stylesheet">
+    <!-- Morris Charts CSS -->
+  < <link href="~/Content/bower_components/morrisjs/morris.css" rel="stylesheet">
+    <link href="~/Content/Style.css" rel="stylesheet" />
+    <link href="~/Content/less/font-awesome.css" rel="stylesheet" />
+    <link href="https://cdn.datatables.net/1.10.11/css/dataTables.jqueryui.min.css" rel="stylesheet" />
+        <!-- Custom Fonts -->
+        <link href="~/Content/bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <script src="~/Content/bower_components/datatables/media/js/jquery.dataTables.min.js"></script>
+        <script src="~/Content/bower_components/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.min.js"></script>
+        <script src="https://cdn.datatables.net/1.10.11/js/jquery.dataTables.min.js"></script>
+        <script src="https://cdn.datatables.net/1.10.11/js/dataTables.bootstrap4.min.js"></script>
+        <script src="~/Scripts/jquery.isloading.min.js"></script>
+    </head>
+    <body>
+        <div class="main">
+
+            <div class="header">
+                <div class="header_resize">
+                    <div class="logo"><h1>
+                               <img src="~/Content/img/emailer_logo.png" style="width:200px;height:50px" /></h1></div>
+
+                    <div class="clr"></div>
+@if (Request.IsAuthenticated)
+{
+    using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm1" }))
+    {
+                    <div class="menu">
+                        <ul>
+                            <li class="active"><a href="index.html"><span>Home</span></a></li>
+                            <li><a href="/Country"><span>Country</span></a></li>
+                            <li><a href="/Exception"><span>Exception</span></a></li>
+                            <li><a href="/CampaignTypes"><span>Compaign Types</span></a></li>
+                            <li><a href="javascript:document.getElementById('logoutForm1').submit()"><span>Logout</span></a></li>
+                            <li><a href="contact.html"><span>Contact Us</span></a></li>
+                        </ul>
+                    </div>
+    }
+}
+                    <div class="clr"></div>
+                </div>
+            </div>
+            <div class="clr"></div>
+            <div class="fbg">
+                <div class="fbg_resize">
+                    @RenderBody();
+                    <div class="clr"></div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="footer_resize">
+                    <p class="lf">&copy; Copyright MyWebSite. Designed by ROW <a href="http://www.returnonweb.com">Website</a></p>
+                    <ul class="fmenu">
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li><a href="support.html">Country</a></li>
+                        <li><a href="blog.html">Compaign Types</a></li>
+                        <li><a href="about.html">Logout</a></li>
+                        <li><a href="contact.html">Contacts</a></li>
+                    </ul>
+                </div>
+                <div class="clr"></div>
+            </div>
+        </div>
+        @RenderSection("scripts", required: false)
+    </body>
+    </html>

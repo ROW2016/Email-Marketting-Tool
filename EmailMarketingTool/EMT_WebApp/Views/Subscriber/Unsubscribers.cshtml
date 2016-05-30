@@ -1,0 +1,81 @@
+﻿@model EMT_WebApp.ViewModels.SubscribersViewModel
+
+<div id="page-wrapper">
+    <div class="row">
+        <div class="col-lg-10">
+            <h1 class="page-header">View UnSubscriber</h1>
+        </div>
+        <div class="col-lg-2">
+            @Html.ActionLink("List", "Index", "List", new { @class = "btn btn-sm btn-primary" })
+        </div>
+        <!-- /.col-lg-12 -->
+    </div>
+    <!-- /.row -->
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    Subscribers to list
+                </div>
+
+                <!-- /.panel-heading -->
+                <div class="panel-body">
+                    @if (Model.SubscribersToList.Count != 0)
+                    {
+                        @Html.ValidationMessage("present", new { @class = "text-danger" })
+                        <div class="dataTable_wrapper">
+                            <table class="table  table-hover">
+
+                                <thead>
+                                    <tr>
+                                        <th>First Name</th>
+                                        <th>Last Name</th>
+                                        <th>Email</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                    @foreach (var item in Model.SubscribersToList)
+                                    {
+                                        <tr class="odd gradeX">
+                                            <td>
+                                                @Html.DisplayFor(modelitem => item.FirstName)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelitem => item.LastName)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelitem => item.EmailAddress)
+                                            </td>
+
+                                        </tr>
+                                    }
+
+                                </tbody>
+                            </table>
+
+                            @*<nav>
+                                <ul class="pager">
+                                    <li><a href="#">Previous</a></li>
+                                    <li><a href="#">Next</a></li>
+                                </ul>
+                            </nav>*@
+                        </div>
+                    }
+
+
+                    else {
+
+                        <p>No Unsubscribers in list</p><br />
+                    }
+                    <!-- /.table-responsive -->
+                </div>
+                <!-- /.panel-body -->
+            </div>
+            <!-- /.panel -->
+        </div>
+        <!-- /.col-lg-12 -->
+    </div>
+    @Html.ActionLink("Back", "Index", "List",null, new { @class = "btn btn-primary" })
+</div>
+<!-- /#page-wrapper -->

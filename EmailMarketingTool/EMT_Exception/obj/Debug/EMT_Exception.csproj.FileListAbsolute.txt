@@ -1,0 +1,19 @@
+F:\Anupama\Final Package\Email Marketing Tool\EmailMarketingTool\EMT_Exception\bin\Debug\EMT_Exception.dll.config
+F:\Anupama\Final Package\Email Marketing Tool\EmailMarketingTool\EMT_Exception\bin\Debug\EMT_Exception.dll
+F:\Anupama\Final Package\Email Marketing Tool\EmailMarketingTool\EMT_Exception\bin\Debug\EMT_Exception.pdb
+F:\Anupama\Final Package\Email Marketing Tool\EmailMarketingTool\EMT_Exception\obj\Debug\EMT_Exception.dll
+F:\Anupama\Final Package\Email Marketing Tool\EmailMarketingTool\EMT_Exception\obj\Debug\EMT_Exception.pdb
+F:\ROW\Email Markeing\Shared\Final Package\EmailMarketingTool\EMT_Exception\bin\Debug\EMT_Exception.dll.config
+F:\ROW\Email Markeing\Shared\Final Package\EmailMarketingTool\EMT_Exception\bin\Debug\EMT_Exception.dll
+F:\ROW\Email Markeing\Shared\Final Package\EmailMarketingTool\EMT_Exception\bin\Debug\EMT_Exception.pdb
+F:\ROW\Email Markeing\Shared\Final Package\EmailMarketingTool\EMT_Exception\obj\Debug\EMT_Exception.csprojResolveAssemblyReference.cache
+F:\ROW\Email Markeing\Shared\Final Package\EmailMarketingTool\EMT_Exception\obj\Debug\EMT_Exception.dll
+F:\ROW\Email Markeing\Shared\Final Package\EmailMarketingTool\EMT_Exception\obj\Debug\EMT_Exception.pdb
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_Exception\bin\Debug\EMT_Exception.dll.config
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_Exception\bin\Debug\EMT_Exception.dll
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_Exception\bin\Debug\EMT_Exception.pdb
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_Exception\obj\Debug\EMT_Exception.csprojResolveAssemblyReference.cache
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_Exception\obj\Debug\EMT_Exception.dll
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_Exception\obj\Debug\EMT_Exception.pdb
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_Exception\bin\Debug\EMT_DataAccessLayer.dll
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_Exception\bin\Debug\EMT_DataAccessLayer.pdb

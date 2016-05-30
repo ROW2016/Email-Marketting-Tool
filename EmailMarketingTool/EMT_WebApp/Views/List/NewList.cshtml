@@ -1,0 +1,127 @@
+﻿@model EMT_WebApp.Models.M_List
+
+
+<div id="page-wrapper">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="col-lg-10">
+                <h1 class="page-header">Create List</h1>
+            </div>
+            <div class="col-lg-2">
+                @Html.ActionLink("List","Index", "List", new { @class= "btn btn-sm btn-primary" })
+            </div>
+        </div>
+        <!-- /.col-lg-12 -->
+    </div>
+    <!-- /.row -->
+    <div class="row">
+        <div class="col-lg-10 ">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    List details
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            @*<form role="form">*@
+                            @using (Html.BeginForm("NewList", "List", FormMethod.Post))
+                            {
+                                @*@Html.ValidationSummary(true,"",new { @class = "text-danger" })*@
+
+                                <div class="form-group">
+                                    <label>List Name</label>
+                                    @*<input class="form-control" required>*@
+                                    @Html.TextBoxFor(model => model.ListName, htmlAttributes: new { @class = "form-control", required = "required" })
+                                    @Html.ValidationMessageFor(model => model.ListName, "", new { @class = "text-danger" })
+                                    @Html.ValidationMessage("Errorlistname", new { @class = "text-danger" })
+                                    <p class="help-block">Your subscribers will see this, so make it something appropriate.</p>
+                                </div>
+                                @*<div class="form-group">
+                                        <label>Default “from” email</label>
+                                        @*<input class="form-control" required>
+                                        @Html.TextBoxFor(model => model.DefaultFromEmail, htmlAttributes: new { @class = "form-control" })
+                                        @Html.ValidationMessageFor(model => model.DefaultFromEmail, "", new { @class = "text-danger" })
+                                        <p class="help-block">This is the address people will reply to.</p>
+                                    </div>*@
+                                @*<div class="form-group">
+                                        <label>Default “from” name</label>
+                                        @*<input class="form-control" required>
+                                        @Html.TextBoxFor(model => model.DefaultFromName, htmlAttributes: new { @class = "form-control", required = "required" })
+                                        @Html.ValidationMessageFor(model => model.DefaultFromName, "", new { @class = "text-danger" })
+                                        <p class="help-block">This is who your emails will come from. Use something they'll instantly recognize, like your company name.</p>
+                                    </div>*@
+                                <div class="form-group">
+                                    <label>Company / organization</label>
+                                    @*<input class="form-control" required>*@
+                                    @Html.TextBoxFor(model => model.CompanyorOrganization, htmlAttributes: new { @class = "form-control", required = "required" })
+                                    @Html.ValidationMessageFor(model => model.DefaultFromEmail, "", new { @class = "text-danger" })
+                                </div>
+                                <div class="form-group">
+                                    <label>Address</label>
+                                    @*<input class="form-control">*@
+                                    @Html.TextBoxFor(model => model.Address1, htmlAttributes: new { @class = "form-control", required = "required" })
+                                    @Html.ValidationMessageFor(model => model.Address1, "", new { @class = "text-danger" })
+                                </div>
+                                <div class="form-group">
+                                    @*<input class="form-control">*@
+                                    @Html.TextBoxFor(model => model.Address2, htmlAttributes: new { @class = "form-control" })
+                                    @Html.ValidationMessageFor(model => model.Address2, "", new { @class = "text-danger" })
+                                </div>
+                                <div class="form-group">
+                                    <label>City</label>
+                                    @*<input class="form-control" required>*@
+                                    @Html.TextBoxFor(model => model.City, htmlAttributes: new { @class = "form-control", required = "required" })
+                                    @Html.ValidationMessageFor(model => model.City, "", new { @class = "text-danger" })
+                                </div>
+                                <div class="form-group">
+                                    <label>Zip / Postal code</label>
+                                    @*<input class="form-control" required>*@
+                                    @Html.TextBoxFor(model => model.PostalCode, htmlAttributes: new { @class = "form-control", required = "required" })
+                                    @Html.ValidationMessageFor(model => model.PostalCode, "", new { @class = "text-danger" })
+                                </div>
+                                <div class="form-group">
+                                    <label>Country</label>
+                                    @*<select class="form-control">
+                                            <option>India</option>
+                                            <option>USA</option>
+                                            <option>Japan</option>
+                                            <option>South Africa</option>
+                                            <option>Nepal</option>
+                                        </select>*@
+                                    @*@Html.TextBoxFor(model => model.Country, htmlAttributes: new { @class = "form-control" })*@
+                                    @Html.DropDownListFor(model => model.CountryID, (SelectList)ViewBag.country, new { @class = "form-control" })
+                                    @Html.ValidationMessageFor(model => model.CountryID, "", new { @class = "text-danger" })
+                                </div>
+                                <div class="form-group">
+                                    <label>Phone </label>
+                                    @*<input class="form-control">*@
+                                    @Html.TextBoxFor(model => model.PhoneNumber, htmlAttributes: new { @class = "form-control" })
+                                    @Html.ValidationMessageFor(model => model.PhoneNumber, "", new { @class = "text-danger" })
+                                </div>
+                                <button type="submit" class="btn btn-primary">Save</button>
+                                @Html.ActionLink("Cancel", "Index", "List", new { @class = "btn btn-default" })
+                                @*<a href="lists.html"><button type="reset" class="btn btn-default">Cancel</button></a>*@
+                                @*</form>*@
+                            }
+                        </div>
+                        <!-- /.col-lg-6 (nested) -->
+                    </div>
+                    <!-- /.row (nested) -->
+                </div>
+                <!-- /.panel-body -->
+            </div>
+            <!-- /.panel -->
+        </div>
+        <!-- /.col-lg-12 -->
+    </div>
+    <!-- /.row -->
+</div>
+<!-- /#page-wrapper -->
+
+<script src="~/Content/bower_components/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="~/Content/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- Metis Menu Plugin JavaScript -->
+<script src="~/Content/bower_components/metisMenu/dist/metisMenu.min.js"></script>
+<!-- Custom Theme JavaScript -->
+<script src="~/Content/dist/js/sb-admin-2.js"></script>

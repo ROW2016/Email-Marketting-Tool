@@ -1,0 +1,186 @@
+﻿@using Microsoft.AspNet.Identity
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Marketing</title>
+    <script src="~/Content/bower_components/jquery/dist/jquery.min.js"></script>
+
+
+    <!-- Morris Charts JavaScript -->
+    @*<script src="~/Content/bower_components/raphael/raphael-min.js"></script>
+        <script src="~/Content/bower_components/morrisjs/morris.min.js"></script>
+        <script src="~/Content/js/morris-data.js"></script>*@
+    <!-- Custom Theme JavaScript -->
+    <script src="~/Content/dist/js/sb-admin-2.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="~/Content/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="~/Content/bower_components/metisMenu/dist/metisMenu.min.js"></script>
+    <!-- Bootstrap Core CSS -->
+    <link href="~/Content/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- MetisMenu CSS -->
+    <link href="~/Content/bower_components/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
+    <!-- Timeline CSS -->
+    <link href="~/Content/dist/css/timeline.css" rel="stylesheet">
+    <link href="~/Content/dist/css/style.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="~/Content/dist/css/sb-admin-2.css" rel="stylesheet">
+    <!-- Morris Charts CSS -->
+    <link href="~/Content/bower_components/morrisjs/morris.css" rel="stylesheet">
+    <link href="~/Content/Style.css" rel="stylesheet" />
+    <link href="~/Content/less/font-awesome.css" rel="stylesheet" />
+    <link href="https://cdn.datatables.net/1.10.11/css/dataTables.jqueryui.min.css" rel="stylesheet" />
+    <!-- Custom Fonts -->
+    <link href="~/Content/bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <script src="~/Content/bower_components/datatables/media/js/jquery.dataTables.min.js"></script>
+    <script src="~/Content/bower_components/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.11/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.11/js/dataTables.bootstrap4.min.js"></script>
+   
+          @*<script src="~/Scripts/jquery-1.10.2.min.js"></script>*@
+    <script src="~/Scripts/jquery.isloading.min.js"></script>
+    @*<link href="~/Content/Site.css" rel="stylesheet" />
+        <link href="~/Content/bootstarp.combined.min.css" rel="stylesheet" />*@
+</head>
+
+<body>
+    <div id="wrapper">
+        @if (Request.IsAuthenticated)
+        {
+            using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm" }))
+            {
+
+                <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="/home/Index">
+                            @*Email Marketing*@
+                            <img src="~/Content/img/mail.png" />
+                        </a>
+                    </div>
+                    <!-- /.navbar-header -->
+
+                    <ul class="nav navbar-top-links navbar-right">
+                        <li>
+                            @Html.ActionLink("Hello " + User.Identity.GetUserName() + "!", "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage" })
+                        </li>
+                        <!-- /.dropdown -->
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                <i class="fa fa-user fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                            </a>
+
+                            <ul class="dropdown-menu dropdown-user">
+                                <li>
+                                    <a href="/UserProfile/index"><i class="fa fa-user fa-fw"></i>Profile</a>
+                                    @*<a href="/ViewProfile/@User.Identity.Name"><i class="fa fa-user fa-fw"></i> User Profile</a>*@
+                                    @*@Html.ActionLink("Profile", "ViewProfile", new { id = User.Identity.Name },new { @class= "fa fa-user fa-fw" })*@
+                                </li>
+                                <li>
+                                    <a href="/Manage/Index" title="Manage"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                                    @*@Html.ActionLink("Settings","Index","Manage", routeValues: null, htmlAttributes: new { title = "Manage" })*@
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+
+
+                                <li><a href="javascript:document.getElementById('logoutForm').submit()">Log Out</a></li>
+                                @*@Html.ActionLink("Logout", "LogOff", "Account",null,new {@class= "fa fa-sign-out fa-fw" })*@
+                                @*<a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>*@
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-user -->
+                    </li>
+                    <!-- /.dropdown -->
+                    </ul>
+                    <!-- /.navbar-top-links -->
+                    <div class="navbar-default sidebar" role="navigation">
+                        <div class="sidebar-nav navbar-collapse">
+                            <ul class="nav" id="side-menu">
+                                @*<li class="sidebar-search">
+                                    <div class="input-group custom-search-form">
+                                        <input type="text" class="form-control" placeholder="Search...">
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-default" type="button">
+                                                <i class="fa fa-search"></i>
+                                            </button>
+                                        </span>
+                                    </div>*@
+                                <!-- /input-group -->
+                                @*</li>*@
+                                <li>
+                                    <a href=""><i class="fa fa-envelope fa-fw"></i> Campaigns<span class="fa arrow"></span></a>
+
+                                    <ul class="nav nav-second-level">
+                                        <li>
+                                            @*<a href="lists.html">Create List</a>*@
+                                            @Html.ActionLink("View Campaign", "Campaign", "Campaign")
+                                        </li>
+                                        <li>
+                                            @Html.ActionLink("Create Campaign", "Creation", "Campaign")
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="/List/index"><i class="fa fa-table fa-fw"></i> Lists<span class="fa arrow"></span></a>
+                                    @*@Html.ActionLink("Lists", "Index", "List", new { @class = "fa fa-table fa-fw " })*@
+
+                                    <ul class="nav nav-second-level">
+                                        <li>
+                                            @*<a href="lists.html">Create List</a>*@
+                                            @Html.ActionLink("View List", "Index", "List")
+                                        </li>
+                                        <li>
+                                            @Html.ActionLink("Create List", "NewList", "List")
+                                        </li>
+                                        @*<li>
+                                                <a href="/List/AddSubcriber">Add a Subscriber</a>
+                                            </li>
+                                            <li>
+                                                <a href="/List/ImportSubcriber">import Subscribers</a>
+                                            </li>*@
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="/Reports/index"><i class="fa fa-files-o fa-fw"></i> Reports<span class="fa arrow"></span></a>
+                                    @*@Html.ActionLink("Reports","Index", "Reports", null,new { @class= "fa fa-files-o fa-fw" })*@
+                                    <ul class="nav nav-second-level">
+                                        <li>
+                                            @*<a href="lists.html">Create List</a>*@
+                                            @Html.ActionLink("Campaign Performance", "Index", "Reports")
+                                        </li>
+
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /.sidebar-collapse -->
+                    </div>
+                    <!-- /.navbar-static-side -->
+                    @Html.Partial("_LoginPartial")
+                </nav>
+            }
+        }
+
+        <div>
+            @RenderBody()
+            <hr />
+            @*<footer>
+                    <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+                </footer>*@
+        </div>
+    </div>
+
+
+
+    @RenderSection("scripts", required: false)
+</body>
+</html>

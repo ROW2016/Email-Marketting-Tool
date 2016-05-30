@@ -1,0 +1,33 @@
+﻿
+@{
+    ViewBag.Title = "Thanks";
+}
+
+<div id="page-wrapper">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header"></h1>
+                <center>
+                    <div>
+                        <img src="~/Content/img/thanku.png" width="20%" alt="" />
+                        <h1><b>Thank You!</b></h1>
+                       
+                            <h2> Your campaign's email Id list is in queue, we will notify you once all the emails are been sent.</h2>
+                            <br />
+                            <br /> 
+                           
+                    
+                        <br>
+                        @Html.ActionLink("View Dashboard", "Index","Home",null ,new {@class= "btn btn-primary btn-lg " });
+                        
+                    </div>
+                </center>
+                <h1 class="page-header"></h1>
+            </div>
+            <!-- /.col-lg-12 -->
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container-fluid -->
+</div>

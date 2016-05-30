@@ -1,0 +1,9 @@
+F:\Anupama\Final Package\Paul\EmailMarketingTool\TRK\bin\Debug\TRK.dll
+F:\Anupama\Final Package\Paul\EmailMarketingTool\TRK\bin\Debug\TRK.pdb
+F:\Anupama\Final Package\Paul\EmailMarketingTool\TRK\bin\Debug\EMT_Exception.dll
+F:\Anupama\Final Package\Paul\EmailMarketingTool\TRK\bin\Debug\EMT_DataAccessLayer.dll
+F:\Anupama\Final Package\Paul\EmailMarketingTool\TRK\bin\Debug\EMT_Exception.pdb
+F:\Anupama\Final Package\Paul\EmailMarketingTool\TRK\bin\Debug\EMT_DataAccessLayer.pdb
+F:\Anupama\Final Package\Paul\EmailMarketingTool\TRK\obj\Debug\TRK.csprojResolveAssemblyReference.cache
+F:\Anupama\Final Package\Paul\EmailMarketingTool\TRK\obj\Debug\TRK.dll
+F:\Anupama\Final Package\Paul\EmailMarketingTool\TRK\obj\Debug\TRK.pdb

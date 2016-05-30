@@ -1,0 +1,153 @@
+﻿@*@model IEnumerable<EMT_WebApp.Models.M_Campaigns>*@
+@model EMT_WebApp.ViewModels.CampaignViewModel
+
+@{
+    ViewBag.Title = "Campaign";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style type="text/css">
+    .col-sm-6 {
+        float: right;
+    }
+
+    a.classActive {
+        background-image: url('../../Content/img/active (1).png');
+        display: block;
+        width: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        text-indent: -9999px;
+    }
+    .dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    color: white !important;
+    /* border: 1px solid #111; */
+     background-color: #585858; 
+     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #585858), color-stop(100%, #111)); 
+    /* background: -webkit-linear-gradient(top, #585858 0%, #111 100%); */
+    /*background: -moz-linear-gradient(top, #585858 0%, #111 100%);
+    background: -ms-linear-gradient(top, #585858 0%, #111 100%);
+    background: -o-linear-gradient(top, #585858 0%, #111 100%);*/
+    /* background: linear-gradient(to bottom, #585858 0%, #111 100%); */
+}
+    a.classInctive {
+        background-image: url('../../Content/img/inactive (1).png');
+        display: block;
+        width: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        text-indent: -9999px;
+    }
+
+    .not-active {
+        pointer-events: none;
+        cursor: default;
+    }
+    .pagination>li>a, .pagination>li>span {
+    position: relative;
+    float: left;
+    padding: 5px 12px;
+    margin-left: -32px;
+    line-height: 1.42857143;
+    color: #337ab7;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+</style>
+
+<div id="page-wrapper">
+    <div class="row">
+        <div class="col-lg-8">
+            <h1 class="page-header">Campaigns</h1>
+        </div>
+        <div class="col-lg-2 pull-right">
+            <div class="page-header">
+                @Html.ActionLink("New Campaign", "Creation", "Campaign", new { @class = "btn btn-primary" })
+
+            </div>
+        </div>
+        <!-- /.col-lg-12 -->
+    </div>
+    <!-- /.row -->
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    List Of Campaigns
+                </div>
+                <!-- /.panel-heading -->
+                <div class="panel-body">
+                    @if (Model.Campaigns.Count != 0)
+                    {
+                        <div class="dataTable_wrapper">
+                            <table class="table table-striped table-bordered table-hover" id="dataTables-Campaign">
+                                <thead>
+                                    <tr>
+                                        <th>Campaign Name</th>
+                                        <th>Campaign Type</th>
+                                        <th>Email Subject</th>
+                                        <th>Change</th>
+                                        <th>Status</th>
+                                        <th>Send</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                    @foreach (var item in Model.Campaigns)
+                                    {
+                                        <tr class="odd gradeX">
+                                            <td>@Html.DisplayFor(model => item.Name)</td>
+                                            @if (item.CTypeId == 1)
+                                            {
+                                                @*<td>@Html.DisplayFor(model => item.M_CampTypes.Name)</td>*@
+                                                <td>HTML</td>
+                                            }
+                                            else {
+                                                <td>Text</td>
+                                            }
+                                            <td>@Html.DisplayFor(model => item.EmailSubject)</td>
+
+                                            <td class="center">@Html.ActionLink("Settings", "editCampaign", new { id = item.Cid }) | @Html.ActionLink("Template", "editDesigner", new { id = item.Cid }) </td>
+                                            @if (item.IsActive == true)
+                                            {
+                                                <td class="center">@Html.ActionLink("Active", "DeleteCamp", new { id = item.Cid }, new { @class = "classActive img-responsive", onclick = "return confirm('Are you sure you wish to Inactivate this Campaign?');" })</td>
+                                                @*<td class="center">@Html.ActionLink("Send Emails", "SendEmailAsync", new { id = item.Cid })</td>*@
+                                                <td class="center">@Html.ActionLink("Send Emails", "AddToQueue", new { campaignID = item.Cid })</td>
+                                            }
+                                            else {
+                                                <td class="center">@Html.ActionLink("Inactive", "EditStatus", new { id = item.Cid }, new { @class = "classInctive img-responsive", onclick = "return confirm('Are you sure you wish to Active this Campaign?');" })</td>
+                                                <td class="center">@Html.ActionLink("Send Emails", "AddToQueue", new { id = item.Cid }, new { @class = "not-active" })</td>
+                                            }
+
+
+                                        </tr>
+                                    }
+
+                                </tbody>
+                            </table>
+                        </div>
+                    }
+                    else {
+                        <p>No campaigns,start by creating @Html.ActionLink("New Campaign", "Creation", "Campaign") </p>
+                    }
+                    <!-- /.table-responsive -->
+                </div>
+                <!-- /.panel-body -->
+            </div>
+            <!-- /.panel -->
+        </div>
+        <!-- /.col-lg-12 -->
+    </div>
+</div>
+<script type="text/javascript">
+    //$('#dataTables-Campaign').DataTable({
+    //    responsive: true
+    //});
+
+    $('#dataTables-Campaign').DataTable({
+        "columnDefs": [{
+            "targets": [3, 5],
+            "orderable": false
+        }]
+    });
+</script>

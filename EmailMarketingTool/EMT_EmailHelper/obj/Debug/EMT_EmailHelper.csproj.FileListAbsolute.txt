@@ -1,0 +1,21 @@
+F:\Anupama\Final Package\Email Marketing Tool\EmailMarketingTool\EMT_EmailHelper\bin\Debug\EMT_EmailHelper.dll.config
+F:\Anupama\Final Package\Email Marketing Tool\EmailMarketingTool\EMT_EmailHelper\bin\Debug\EMT_EmailHelper.dll
+F:\Anupama\Final Package\Email Marketing Tool\EmailMarketingTool\EMT_EmailHelper\bin\Debug\EMT_EmailHelper.pdb
+F:\Anupama\Final Package\Email Marketing Tool\EmailMarketingTool\EMT_EmailHelper\obj\Debug\EMT_EmailHelper.csprojResolveAssemblyReference.cache
+F:\Anupama\Final Package\Email Marketing Tool\EmailMarketingTool\EMT_EmailHelper\obj\Debug\EMT_EmailHelper.dll
+F:\Anupama\Final Package\Email Marketing Tool\EmailMarketingTool\EMT_EmailHelper\obj\Debug\EMT_EmailHelper.pdb
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_EmailHelper\obj\Debug\EMT_EmailHelper.csprojResolveAssemblyReference.cache
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_EmailHelper\obj\Debug\EMT_EmailHelper.dll
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_EmailHelper\obj\Debug\EMT_EmailHelper.pdb
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_EmailHelper\bin\Debug\EMT_EmailHelper.dll.config
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_EmailHelper\bin\Debug\EMT_EmailHelper.dll
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_EmailHelper\bin\Debug\EMT_EmailHelper.pdb
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_EmailHelper\bin\Debug\EMT_DataAccessLayer.pdb
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_EmailHelper\bin\Debug\EMT_EmailSender.dll
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_EmailHelper\bin\Debug\SendGridMail.dll
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_EmailHelper\bin\Debug\EMT_EmailSender.pdb
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_EmailHelper\bin\Debug\EMT_Exception.dll
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_EmailHelper\bin\Debug\EMT_Exception.pdb
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_EmailHelper\bin\Debug\EMT_DataAccessLayer.dll
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_EmailHelper\bin\Debug\TRK.dll
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_EmailHelper\bin\Debug\TRK.pdb

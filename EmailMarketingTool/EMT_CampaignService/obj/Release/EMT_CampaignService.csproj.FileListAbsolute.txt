@@ -1,0 +1,12 @@
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_CampaignService\bin\Release\EMT_CampaignService.exe.config
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_CampaignService\bin\Release\EMT_CampaignService.exe
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_CampaignService\bin\Release\EMT_CampaignService.pdb
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_CampaignService\bin\Release\EMT_Utility.dll
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_CampaignService\bin\Release\EMT_Utility.pdb
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_CampaignService\obj\Release\EMT_CampaignService.exe
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_CampaignService\obj\Release\EMT_CampaignService.pdb
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_CampaignService\bin\Release\EMT_Exception.dll
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_CampaignService\bin\Release\EMT_DataAccessLayer.dll
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_CampaignService\bin\Release\EMT_Exception.pdb
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_CampaignService\bin\Release\EMT_DataAccessLayer.pdb
+F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_CampaignService\obj\Release\EMT_CampaignService.csprojResolveAssemblyReference.cache

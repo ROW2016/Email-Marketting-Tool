@@ -1,0 +1,10 @@
+﻿Uninstalling assembly 'F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_PollCampaignService\bin\Debug\EMT_PollCampaignService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_PollCampaignService\bin\Debug\EMT_PollCampaignService.InstallLog
+   assemblypath = F:\Anupama\Final Package\Paul\EmailMarketingTool\EMT_PollCampaignService\bin\Debug\EMT_PollCampaignService.exe
+Removing EventLog source Campaign.
+Warning: The source Campaign is not registered on the local machine.
+Service Campaign is being removed from the system...
+Service Campaign was successfully removed from the system.
+Attempt to stop service Campaign.

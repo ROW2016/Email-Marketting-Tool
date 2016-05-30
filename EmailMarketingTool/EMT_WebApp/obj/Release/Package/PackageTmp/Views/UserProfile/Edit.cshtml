@@ -1,0 +1,49 @@
+﻿@model EMT_WebApp.Models.M_Profile
+
+<div id="page-wrapper">
+    <div class="h2">Edit Profile</div>
+    <div class="row">
+        
+        @using (Html.BeginForm("Edit", "UserProfile", FormMethod.Post, new { enctype = "multipart/form-data" }))
+        {
+            @Html.HiddenFor(model => model.Pid)
+            @Html.HiddenFor(model => model.UserID)
+            <div class="col-md-2">
+                <div class="form-group">
+                    <label>Organization Name</label><br />
+                </div>
+                <div class="form-group">
+                    <label>Domain Used</label><br />
+                </div>
+                <div class="form-group">
+                    <label>Address</label><br /><br />
+                </div>
+                <div class="form-group">
+                    <label>Organization Logo</label><br /><br />
+                </div>
+               
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    @Html.EditorFor(model => model.CompanyName,new { htmlAttributes= new { @class = "form-control", @required = "required", @style = "Width:400px" } })
+                </div>
+                <div class="form-group">
+
+                    @Html.EditorFor(model => model.Domain, new { htmlAttributes = new { @class = "form-control", @required = "required", @style = "Width:400px" } })
+                </div>
+                <div class="form-group">
+
+                    @Html.EditorFor(model => model.Address, new { htmlAttributes = new { @class = "form-control", @required = "required", @style = "Width:400px" } })
+                </div>
+                <div class="form-group">
+                    <img src="~/Logo/@Model.CompanyLogo" />
+                    <input type="file" name="Uploadlogo" value="@Model.CompanyLogo">
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary" style="float:right">Save</button>
+                </div>
+                @Html.ActionLink("Cancel", "Index", "Home", null, null)
+            </div>
+        }
+    </div>
+</div>

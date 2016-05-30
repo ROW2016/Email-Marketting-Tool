@@ -1,0 +1,82 @@
+﻿@model EMT_WebApp.ViewModels.ReportCamp
+@{
+    ViewBag.Title = "Campaign";
+}
+
+<div id="page-wrapper">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">Campaign Report</h1>
+        </div>
+
+    </div>
+    <!-- /.row -->
+@if (Model.campgn.Count!=0)
+{
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    Status of campaigns
+                </div>
+                <!-- /.panel-heading -->
+                <div class="panel-body">
+                    <div class="dataTable_wrapper">
+                        <table class="table table-striped table-bordered table-hover" id="dataTables-example">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Email Subject</th>
+                                    <th>No of subscribers</th>
+                                    <th>No of Unsubscribers</th>
+                                    <th>Opened</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                             
+                                    @foreach (var item in Model.campgn)
+                                    {
+                                        <tr class="odd gradeX">
+                                            <td>@Html.DisplayFor(m => item.camp.Name) </td>
+                                            <td>@Html.DisplayFor(m => item.camp.EmailSubject)</td>
+                                            <td>@Html.DisplayFor(m => item.noOdcanmsub)</td>
+                                            <td>@Html.DisplayFor(m => item.NoOfUnsubscribe)</td>
+                                            <td class="center">@Html.DisplayFor(m => item.noOfOpenedEm)</td>
+                                            <td class="center">
+                                                <div class="pull-right">
+                                                    <div class="btn-group">
+                                                        <button aria-expanded="false" type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
+                                                            Actions
+                                                            <span class="caret"></span>
+                                                        </button>
+                                                        <ul class="dropdown-menu pull-right" role="menu">
+                                                            <li>
+                                                                @Html.ActionLink("In Depth", "DetailedStat", new { id = item.camp.Cid })
+                                                            </li>
+                                                            @*<li>
+                            <a href="list-import.html">Chart</a>
+                        </li>*@
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    }
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- /.table-responsive -->
+                </div>
+                <!-- /.panel-body -->
+            </div>
+            <!-- /.panel -->
+        </div>
+        <!-- /.col-lg-12 -->
+    </div>
+}
+else {
+<div class="h4">You hav no campaigns running</div>
+}
+</div>
+<!-- /#page-wrapper -->
